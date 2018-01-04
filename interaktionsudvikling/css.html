@@ -1,0 +1,692 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>CSS</title>
+
+        <!-- STYLESHEETS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <link rel="stylesheet" href="../egen_css/style.css" /> <!-- Ligger i mappen css, bruges til at style html siden -->
+
+        <!-- GOOGLEFONT -->
+        <link href="https://fonts.googleapis.com/css?family=Aladin|Quicksand:400,700" rel="stylesheet"> <!-- Link til valgte googlefonts -->
+
+        <!-- FONT AWESOME -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    </head>
+    <body>
+        <!-- CONTAINER TIL SIDEN -->
+        <div class="container">
+
+            <!-- HEADER -->
+            <section class="row">
+                <header>
+                    <p id="headertxt">Læringsportfolio</p>
+                </header>  
+            </section>
+
+            <!-- MAIN CONTENT -->
+            <!-- BOOTSTRAP NAV / MENU -->
+            <section class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Forside <span class="sr-only">(current)</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualisering og design <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../visualisering-og-design/farveteori.html">Farveteori</a></li>
+                                        <li><a href="../visualisering-og-design/designprincipper-og-gestaltlove.html">Designprincipper & Gestaltlove</a></li>
+                                        <li><a href="../visualisering-og-design/typografi.html">Typografi</a></li>
+                                        <li><a href="../visualisering-og-design/foto.html">Foto</a></li>
+                                        <li><a href="../visualisering-og-design/adobe.html">Adobe programmer</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interaktionsudvikling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="internettets-historie.html">Internettets historie</a></li>
+                                        <li><a href="server-og-klient.html">Server & klient</a></li>
+                                        <li><a href="grundlaeggende-html.html">Grundlæggende HTML</a></li>
+                                        <li class="active"><a href="css.html">CSS</a></li>
+                                        <li><a href="layout-med-css-grid-model.html">Layout med CSS Grid model</a></li>
+                                        <li><a href="responsive-design.html">Responsive design</a></li>
+                                        <li><a href="versionsstyring-med-git.html">Versionsstyring med GIT</a></li>
+                                        <li><a href="frameworks.html">Frameworks</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kommunikation og formidling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../kommunikation/design-og-kommunikationsstrategi.html">Design og kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/produktionsmodeller.html">Produktionsmodeller</a></li>
+                                        <li><a href="../kommunikation/informationsarkitektur.html">Informationsarkitektur</a></li>
+                                        <li><a href="../kommunikation/ide-generering.html">Idé generering</a></li>
+                                        <li><a href="../kommunikation/tekst-som-medie-og-journalistiske-grundbegreber.html">Tekst som medie og journalistiske grundbegreber</a></li>
+                                        <li><a href="../kommunikation/visualiseringsvaerktoejer.html">Visualiseringsværktøjer</a></li>
+                                        <li><a href="../kommunikation/storytelling-som-brandingstrategi.html">Storytelling som brandingstrategi</a></li>
+                                        <li><a href="../kommunikation/retorisk-kommunikationsstrategi.html">Retorisk kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/semiotik-teori-om-tegn.html">Semiotik: Teori om tegn</a></li>
+                                        <li><a href="../kommunikation/typografisk-semiotik-skriftbilledet.html">Typografisk semiotik</a></li>
+                                        <li><a href="../kommunikation/visuel-kommunikation.html">Visuel kommunikation</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Virksomheden <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../virksomheden/virksomhedstyper-ide-maal-vision-mission.html">Virksomhedstyper & ide, mål, vision, mission</a></li>
+                                        <li><a href="../virksomheden/vaerdigrundlag-og-vaerdikaede.html">Værdigrundlag-og-værdikæde</a></li>
+                                        <li><a href="../virksomheden/forretningsmodel-og-forretningsplan.html">Forretningsmodel og forretningsplan</a></li>
+                                        <li><a href="../virksomheden/love-og-licenser.html">Love og licenser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekter <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../projekter/prototyping-projekt.html">Prototyping projekt</a></li>
+                                        <li><a href="../projekter/onepage-projekt.html">Onepage projekt</a></li>
+                                        <li><a href="../projekter/laeringsportfolio.html">Læringsportfolio projekt</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </section>
+
+            <!-- INDHOLDET -->
+            <section id="content-container">
+
+                <h1>CSS</h1>
+                <section id="section1">
+                    <p>Når man laver et HTML dokument er det altid en god ide at separerer sit indhold fra sine styling-regler. CSS er forkortelsen af Cascading Style Sheets. Det er et kodesprog der bestemmer hvordan man vil have sit indhold vist. F.eks. hvilke fonte eller farver man vil bruge. Man kan lave sin styling i enten sit &lt;head&gt; ved at lave en &lt;style&gt; -regler- &lt;/style&gt;, man kan gøre det inline på det enkelte element, eller man kan følge best practice og style sin HTML i et separat css dokument (som er det jeg går ud fra). Det er en god ide at lave kommentarer i sin css kode så det er nemmere at finde rundt i (skrives sådan: /* kommentar */).</p>
+                </section>
+
+                <section id="section2">
+                    <h2>CSS selectors</h2>
+                    <p>Bliver brugt til at finde eller vælge HTML elementer ud fra deres element-navn, id, class, attributter m.v.</p>
+                    <h3>Type/element selector:</h3>
+                    <p>Denne selector bruges hvis man vil style alle ens elementer på samme måde. Det kunne f.eks. være alle &lt;p&gt;, &lt;h1&gt;, &lt;section&gt; osv. Hvis det f.eks. er &lt;a&gt; man vil style skriver man i CSS følgende: a {…}  </p>
+                    <h3>Id selector:</h3>
+                    <p>Disse kan bruges hvis man har givet sit element et id. Et id er unikt, det vil sige at man kun kan give id’en til ét enkelt element og det er derfor kun dette ene element man kan style hvis man bruger denne selector. Dette angives i CSS filen med et # foran id-navnet. F.eks. #profileimg {…}.</p>
+                    <h3>Class selector:</h3>
+                    <p>Man kan også vælge at give sine elementer en class. Class virker næsten som et id, men i stedet for at det kun kan bruges på ét element, kan man med class bruge det på flere elementer. F.eks. hvis man på sin side har 5 elementer, og de 3 af dem skal styles ens, så kan man give dem en class og så ville de 3 elementer blive stylet på én gang. De resterende ville ikke blive stylet da de ikke har den samme class. I CSS filen angives en class selector med et punktum. F.eks. .imgbox {…}.</p>
+                    <h3>Attribute selector</h3>
+                    <p>Styler elementer med specifikke attributter. F.eks. input[type="text"] {…}.</p>
+                    <h3>Pseudo-class selector:</h3>
+                    <p>En pseudo-class bruges hvis man vil style en bestemt tilstand af et element. Det kan f.eks. være hvis et element skal se anderledes ud når man holder musen over den (f.eks. hvis man vil have en anden farve når man holder musen over et &lt;a&gt;) ville man i CSS skrive :hover efter selector-navnet (f.eks. a:hover {…}). Andre pseudo-class selectors kan være :link (et ubesøgt link), :visited (et besøgt link), :active (et link der er aktivt) eller :first-child (bruges hvis man f.eks. har flere &lt;p&gt; inden i en section og man kun skal style den første. Ville kunne skrives sådan: section p:first-child {…}).</p>
+                    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Liste over pseudo-classes kan ses her</a>
+                    <h3>Descendant selector:</h3>
+                    <p>Flere type selectors, hvor den ene er efterkommer af den anden, f.eks. nav a – betyder at man vælger alle a elementer der ligger inde i en nav. </p>
+                    <h3>Child selector:</h3>
+                    <p>Eksempel: section>p, styler alle &lt;p&gt; der ligger inden i &lt;section&gt;.</p>
+                    <p>Fungerer næsten som en descendant, men child er første efterkommer, og man vælger derfor kun de elementer der ligger lige inden i parent elementet. F.eks. hvis man har en &lt;section&gt; med en &lt;p&gt; og inde i den &lt;section&gt; også har en &lt;article&gt; med en &lt;p&gt; i, så vælger den kun den &lt;p&gt; der ligger i &lt;section&gt; men ikke den &lt;p&gt; der ligger længere inde i &lt;article&gt;. </p>
+                </section>
+
+                <section id="section3">
+                    <h2>Positioning content</h2>
+                    <p>Det mest basale ved layout i CSS er display attributten. De to mest brugte er block (bruger hele vidden af dens parent element og er der flere ligger de sig under hinanden) og inline (ligger sig ved siden af hinanden horisontalt og når der ikke er mere plads på linjen ligger de sig automatisk ned på næste linje). Bruger man display: none; kan man ikke se elementet.  </p>
+                    <ul>
+                        <li>Block elementer kan f.eks. være &lt;section&gt;, &lt;article&gt; og &lt;div&gt;. </li>
+                        <li>Inline elementer er f.eks. &lt;span&gt; eller &lt;img&gt;.</li>
+                    </ul>
+                    <p>Eksempel</p>
+                    <pre>
+&lt;div&gt;Container
+    &lt;div&gt;Div 1&lt;/div&gt;
+    &lt;div&gt;Div 2&lt;/div&gt;
+    &lt;div&gt;Div 3&lt;/div&gt;
+    &lt;span&gt;Span 1 - Hello&lt;/span&gt;
+    &lt;span&gt;Span 2 - Hello&lt;/span&gt;
+    &lt;span&gt;Span 3 - Hello&lt;/span&gt;
+&lt;/div&gt;+'ø
+                    </pre>
+                    --- BILLEDE AF BOXES ---
+                    <p>Som man kan se, ligger div elementerne under hinanden og fylder hele bredden af sin parent element (container) og span elementerne ligger sig i forlængelse af hinanden.</p>
+                    <p>Man kan angive størrelser på elementerne på forskellige måder. </p>
+                    <ul>
+                        <li>Absolut størrelse, f.eks. width: 150px, kan gøre at hvis der ikke er plads til hele indholdet så ”vælter” det ud over sin container. Er den container browservinduet, så vil der komme en scrollbar så man kan scrolle ud og se det der mangles. </li>
+                        <li>Relativ størrelse, f.eks. width: 50%, hvis man bruger denne vil elementet altid være 50% af sin umiddelbare parent element. </li>
+                    </ul>
+                    <h3>Box sizing</h3>
+                    <p>En kasses størrelse inkluderer også dens padding, border og margin. Det betyder at hvis man sætter en kasse til 100px bred og den har f.eks. padding på 10px så er den i virkeligheden 120px bred. Dette kan man kompensere for ved i CSS at bruge box-sizing: border-box;. Det gør at paddingen ikke vil gøre kassen større men i stedet presse indholdet lidt sammen. </p>
+                    <h3>Float</h3>
+                    <p>Float bruges til at justere indhold. Man kan f.eks. hvis man har et billede med en bredde på 30%, give den float: left; og den vil så ligge sig i venstre side og andet indhold vil wrappe sig rundt om billedet. </p>
+                    --- EKSEMPEL ---
+                    <p></p>
+                    <h3>Overflow</h3>
+                    <p>Hvis man har indhold i et element der fylder mere end dens container, kan man i CSS bruge den attribut der hedder overflow. Man kan sætte overflow i disse tilstande:</p>
+                    <ul>
+                        <li>Visible: Default. Indholdet vises uden at containeren bliver påvirket. Dette betyder at indholdet vil flyde ud over containeren.</li>
+                        <li>Hidden: Indholdet bliver klippet af, så alt hvad der flyder ud over containeren kan ikke ses.</li>
+                        <li>Scroll: Der bliver lagt scrollbars på elementet, også selvom indholdet ikke flyder ud over containeren.</li>
+                        <li>Auto: Hvis indholdet flyder ud over containeren bliver der lavet scrollbars, og passer indholdet ind i containeren er der ingen scrollbars.</li>
+                    </ul>
+                    <h3>Inline-block</h3>
+                    <p>Disse elementer bruger kun den bredde som deres indhold fylder og ligger sig efter hinanden horisontalt. En &lt;div&gt; er som bekendt et block element, men hvis man i CSS giver den display: inline-block; kan man få dem til at ligge sig ved siden af hinanden.</p>                   
+                    <pre>
+&lt;div>&gt;Container
+    &lt;div&gt;Div 1&lt;/div&gt;
+    &lt;div&gt;Div 2&lt;/div&gt;
+    &lt;div&gt;Div 3&lt;/div&gt;
+    &lt;div&gt;Div 4&lt;/div&gt;
+    &lt;div&gt;Div 5&lt;/div&gt;
+    &lt;div&gt;Div 6&lt;/div&gt;
+&lt;/div&gt;
+
+Div {
+Display: inline-block;
+}
+                    </pre>
+                    --- BILLEDE ---
+                    <h3>Position</h3>
+                    <p>Position attributten angiver hvilken positionerings type der anvendes til et element.</p>
+                    <ul>
+                        <li>Static: Default. Indholdet positioneres i forhold til hvor det står i dokumentet og i forhold til dens flows egenskaber.</li>
+                        <li>Absolutte: Elementet er positioneret på et bestemt sted. Der afsættes ikke plads til elementet, da det ikke indgår i flowet, men det følger stadig med ved scroll.</li>
+                        <li>Relative: Elementet bliver rykket i forhold til dens normale flow position. Det har ingen betydning for andre elementer og det kan derfor give overlapning og tomme områder.</li>
+                        <li>Fixed: Elementet flytter sig ikke, heller ikke ved scroll. Den ”sidder fast” i vinduet.</li>
+                    </ul>
+                    <h3>Z-index</h3>
+                    <p>Z-index bruges til at bestemme hvilken rækkefølge elementer skal stables i. Dvs. at hvis man har to elementer og de i HTML’en ligger som mindste element står højere på siden end største element og disse to elementer f.eks. er fixed til samme position, så kan man ikke se det mindste element da den er gemt bag den store. Dette kan man rette ved at give elementerne en z-index, hvor det mindste element har et højere index end det største element. </p>
+                    <h3>Centreret indhold</h3>
+                    <p>En simpel måde at centrere indhold på er at man i sin CSS giver, det element man vil have centreret, en margin der hedder 0 og auto. (margin: 0 auto;). Dette laver margin i top og bund til 0 og giver siderne auto. Dette gør at der kommer lige stor margin på hver side af elementet og det bliver dermed centreret. </p>
+                </section>
+
+                <section id="section4">
+                    <h2>Text styles</h2>
+                    <p>Det er ikke alle computere der har de samme fonte installeret. Derfor skal man huske, hvis man vil have en speciel font, at man skal have noget med i koden der løser dette problem. Det kan man enten gøre ved at tage filen til fonten med i sit projekt og linke til den i sin css, eller man kan vælge at bruge fonte der er hostet af andre. Det kan f.eks. være Adobe Typekit eller Google fonts. Man skal bare lige huske at tjekke hvordan licensen er til den font man gerne vil bruge. Nogle er gratis og må bruges som man har lyst til, nogle er gratis til personligt brug, nogle skal man betale for at må bruge kommercielt og andre skal man betale for lige meget hvad.</p>
+                    <p>Hvis man vælger at bruge Google fonts (gratis løsning), linker til den i sin &lt;head&gt; og fonten bliver hentet når siden hentes. Det betyder at man ikke behøver at tænke på om det nu er en font som alle brugere har før man bruger den.</p>
+                    <p>Man kan (bør) vælge en backup font i tilfælde af at den font man har valgt af en eller anden grund ikke duer. Man kan f.eks. hvis man har valgt Verdana skrive font-family: Verdana, sans-serif; Dermed er man sikker på at den font der vises i tilfælde af at Verdana ikke duer er en standart sans-serif font.</p>
+                    <ul>
+                        <li>Font-style: Man kan her vælge om man vil have sin tekst almindelig eller kursiv (italic eller oblique – men oblique er ikke godt understøttet og ligner bare italic)</li>
+                        <li>Font-size: Bruges til at vælge størrelsen på fonten. Det er bedst at holde sig fra pixel størrelse da det ikke er muligt for brugeren at ændre tekst størrelsen så. Man kan sætte størrelsen med enten keywords (xx-small, x-small, small, medium, large, x-large, xx-large, smaller eller larger). Eller man kan vælge at sætte størrelsen med procenter. F.eks. hvis man sætter font-size til 120% betyder det at den er 20% større end parent elementets størrelse.</li>
+                        <li>Font-weight: Her kan man vælge hvor tyk ens font skal være. Man kan vælge enten normal (som er default) eller bold for at gøre teksten federe. Hvis man har valgt en font med flere font-weights, kan disse defineres med tal i stedet (100, 200, 300, 400, 500, 600, 700, 800 eller 900 – hvor 100 er tyndest og 900 tykkest). </li>
+                        <li>Color: Når man skal sætte sin tekst farve skal man bare skrive: color: farvekode; Farvekoden kan blive skrevet enten som RGB: rgb(0, 0, 0), HEX-kode: #000000, HSL: hsl(0, 0%, 0%). Hvis man gerne vil give farven noget gennemsigtighed (opacity) skal man i stedet bruge RGBa: rgba(0, 0, 0, 0.5) eller HSLa: hsla(0%, 0%, 0%, 0.5).</li>
+                        <a href="../media/kap11.pdf" >Flere tekst styling metoder kan ses i denne PDF lavet af Mette Bruhn Nielsen og Camilla Olesen</a>
+                    </ul>
+                </section>
+
+                <section id="section5">
+                    <h2>Borders and backgrounds</h2>
+                    <p></p>
+                </section>
+
+                <section id="section6">
+                    <h2>Styling tables</h2>
+                    <p>Ligesom ved andre elementer, så kan man style sine tables. En helt standard table viser dataene fra de forskellige celler stillet om som man ville forvente det i et regneark, men uden skillestregerne imellem cellerne. For at det skal se lidt mere indbydende ud, kan man style det ved at give tabellen borders, tilføje padding og alignment eller give det nogle farver. Alle disse måder at style en tabel på, gør ikke kun at tabellen kan blive mere tiltalende visuelt, men det kan også gøre det nemmere at overskue dataene. </p>
+                    <p>Man kan også lave sit website layout med tables. Men personligt ville jeg ikke vælge at bruge tables til layout, men i stedet bruge display: grid, som på en måde er en ny og forbedret måde at lave ”table-layout”.</p>
+                    <p>Side lavet af Hussein Hussein og mig selv, som viser eksempler på hvordan man kan style tables:</p>
+                    <object type="text/html" data="http://chri9g09.web.eadania.dk/StylingTables/" width="100%" height="600px"></object>
+
+                </section>
+
+                <section id="section7">
+                    <h2>Flexbox</h2>
+                    <p></p>
+                </section>
+
+                <section id="section8">
+                    <h2>Animations and transforms</h2>
+                    <p></p>
+                </section>
+
+                <section id="section9">
+                    <h2>Kaskaderegler</h2>
+                    <p>Et regelsæt der definerer hvordan modstridende CSS-deklareringer løses. </p>
+                    <ul>
+                        <li>Specificity: Mere specifik har forrang mod mere generel. 
+                            Hvis man skriver p {color: red;} bliver teksten i alle &lt;p&gt; rød. 
+                            Giver man evt. 4 ud af 10 &lt;p&gt; en klasse, f.eks. blue og i css skriver p.blue (eller bare .blue) så er det man skriver her højere i rang end den generelle p, også selvom den står før p i stylesheetet. Endnu mere specifik er id. Giver man et id til 1 af &lt;p&gt;, så kan man style bare denne ene &lt;p&gt; uden at de styles man har givet til de generelle p’er eller p’er med classes ødelægger noget for den der har id (og omvendt).
+                        </li>
+                        <li>Source order: Seneste deklarering har forrang mod tidligere deklareringer. En browser altid læser fra toppen af et dokument og ned, så hvis man vælger at style det samme to gange er det, det sidste der gælder. F.eks. hvis man på linje 3 i sin css skriver: p {color: red;}, og man så senere på linje 57 skriver: p {color: blue;} så overskriver den det der blev skrevet på linje 3.</li>
+                        <li>Specificity har forrang mod Source order</li>
+                        <li>Undtagelse: !important - men den ødelægger hele ideen med kaskaderegler - undgå den så vidt muligt!</li>
+                    </ul>
+                </section>
+
+                <section id="section10">
+                    <h2>Box-modellen</h2>
+                    <p>Hvert element i HTML kan man sige er en kasse. Der er to typer af kasser: </p>
+                    <ul>
+                        <li>Inline: Placeres på linje efter hinanden (horisontal) og skifter selv linje når der ikke er plads til flere. Det kan f.eks. være &lt;a&gt;, &lt;object&gt;, &lt;img&gt; eller &lt;span&gt;. </li>
+                        <li>Block: Bruger hele vidden af dens parent element. Placerer sig under hinanden (stak). Det kan f.eks. være &lt;section&gt;, &lt;h1&gt;, &lt;article&gt; eller &lt;nav&gt;</li>
+                    </ul>
+                    <img src="../billeder/inter/box-model.JPG" alt="boxmodellen" />
+                    <p>Man kan styre om kasserne skal være det ene eller det andet ved i css at skrive f.eks. img {display: block;} eller h1 {display: inline-block;}.</p>
+                    <h3>CSS Box properties</h3>
+                    <p>Content: f.eks. tekst i et &lt;p&gt; eller grafik som et &lt;img&gt;</p>
+                    <p>Padding: Afstand mellem indhold og ramme. Kassen forbliver samme sted, men presser indholdet sammen inde i kassen.</p>
+                    <p>Border: Kan være synlig eller usynlig. Tykkelsen på border, breder sig ud fra elementet og gør derved elementet større.</p>
+                    <p>Margin: Afstand mellem ramme og tilstødende elementer. Rykker på hele kassen og giver større eller mindre afstand til elementer udenom.</p>
+                </section>
+
+                <section id="section11" class="kildesection">
+                    <hr>
+                    <h6>Kilder:</h6>
+                    <ul>
+                        <li><a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+3+-+CSS/dag3+-+intro+til+css.pdf">PDF udleveret af Niels Østergaard</a></li>
+                        <li>	Mark J. Collins: Pro HTML5 with CSS, JavaScript, and Multimedia – kapitel 2, side 15-27 + kapitel 9, side 163-173 + kapitel 10, side 175-198 + kapitel 11, side 199-218 + kapitel 12, side 219-243 + kapitel 13, side 245-270 + kapitel 14, side 271-285 + kapitel 15, side 287-303</li>
+                        <li><a href="../media/kap9.pdf">Fremlæggelse fra Frederikke Boe Sørensen og Gurli Tonsberg</a></li>
+                        <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">www.w3schools.com - pseudo-classes</a></li>
+                        <li><a href="../media/kap10.pdf">Fremlæggelse fra Asger Tillemann Petersen og Jesper Vangsgaard Hansen</a></li>
+                        <li><a href="../media/kap11.pdf">Fremlæggelse fra Mette Bruhn Nielsen og Camilla Olesen</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_blocks.asp ">www.w3schools.com - blocks</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+
+            </section>
+            <!-- TILBAGE TIL TOP KNAP -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p id="footertext">&copy; 2017 - <a href='mailto:chri9g09@student.eadania.dk'>Christina Kvistgaard Iversen</a></p>
+                <p id="smallfootertxt">Erhvervsakademi Dania Skive - MMD 1. semester</p>
+            </footer>
+        </div> <!-- Her slutter container -->
+        <!-- TILBAGE TIL TOP SCRIPT -->
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- Link til jQuery bibliotek online (nødvendig til Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+=======
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>CSS</title>
+
+        <!-- STYLESHEETS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <link rel="stylesheet" href="../egen_css/style.css" /> <!-- Ligger i mappen css, bruges til at style html siden -->
+
+        <!-- GOOGLEFONT -->
+        <link href="https://fonts.googleapis.com/css?family=Aladin|Quicksand:400,700" rel="stylesheet"> <!-- Link til valgte googlefonts -->
+
+        <!-- FONT AWESOME -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    </head>
+    <body>
+        <!-- CONTAINER TIL SIDEN -->
+        <div class="container">
+
+            <!-- HEADER -->
+            <section class="row">
+                <header>
+                    <p id="headertxt">Læringsportfolio</p>
+                </header>  
+            </section>
+
+            <!-- MAIN CONTENT -->
+            <!-- BOOTSTRAP NAV / MENU -->
+            <section class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Forside <span class="sr-only">(current)</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualisering og design <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../visualisering-og-design/farveteori.html">Farveteori</a></li>
+                                        <li><a href="../visualisering-og-design/designprincipper-og-gestaltlove.html">Designprincipper & Gestaltlove</a></li>
+                                        <li><a href="../visualisering-og-design/typografi.html">Typografi</a></li>
+                                        <li><a href="../visualisering-og-design/foto.html">Foto</a></li>
+                                        <li><a href="../visualisering-og-design/adobe.html">Adobe programmer</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interaktionsudvikling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="internettets-historie.html">Internettets historie</a></li>
+                                        <li><a href="server-og-klient.html">Server & klient</a></li>
+                                        <li><a href="grundlaeggende-html.html">Grundlæggende HTML</a></li>
+                                        <li class="active"><a href="css.html">CSS</a></li>
+                                        <li><a href="layout-med-css-grid-model.html">Layout med CSS Grid model</a></li>
+                                        <li><a href="responsive-design.html">Responsive design</a></li>
+                                        <li><a href="versionsstyring-med-git.html">Versionsstyring med GIT</a></li>
+                                        <li><a href="frameworks.html">Frameworks</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kommunikation og formidling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../kommunikation/design-og-kommunikationsstrategi.html">Design og kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/produktionsmodeller.html">Produktionsmodeller</a></li>
+                                        <li><a href="../kommunikation/informationsarkitektur.html">Informationsarkitektur</a></li>
+                                        <li><a href="../kommunikation/ide-generering.html">Idé generering</a></li>
+                                        <li><a href="../kommunikation/tekst-som-medie-og-journalistiske-grundbegreber.html">Tekst som medie og journalistiske grundbegreber</a></li>
+                                        <li><a href="../kommunikation/visualiseringsvaerktoejer.html">Visualiseringsværktøjer</a></li>
+                                        <li><a href="../kommunikation/storytelling-som-brandingstrategi.html">Storytelling som brandingstrategi</a></li>
+                                        <li><a href="../kommunikation/retorisk-kommunikationsstrategi.html">Retorisk kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/semiotik-teori-om-tegn.html">Semiotik: Teori om tegn</a></li>
+                                        <li><a href="../kommunikation/typografisk-semiotik-skriftbilledet.html">Typografisk semiotik</a></li>
+                                        <li><a href="../kommunikation/visuel-kommunikation.html">Visuel kommunikation</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Virksomheden <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../virksomheden/virksomhedstyper-ide-maal-vision-mission.html">Virksomhedstyper & ide, mål, vision, mission</a></li>
+                                        <li><a href="../virksomheden/vaerdigrundlag-og-vaerdikaede.html">Værdigrundlag-og-værdikæde</a></li>
+                                        <li><a href="../virksomheden/forretningsmodel-og-forretningsplan.html">Forretningsmodel og forretningsplan</a></li>
+                                        <li><a href="../virksomheden/love-og-licenser.html">Love og licenser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekter <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../projekter/prototyping-projekt.html">Prototyping projekt</a></li>
+                                        <li><a href="../projekter/onepage-projekt.html">Onepage projekt</a></li>
+                                        <li><a href="../projekter/laeringsportfolio.html">Læringsportfolio projekt</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </section>
+
+            <!-- INDHOLDET -->
+            <section id="content-container">
+
+                <h1>CSS</h1>
+                <section id="section1">
+                    <p>Når man laver et HTML dokument er det altid en god ide at separerer sit indhold fra sine styling-regler. CSS er forkortelsen af Cascading Style Sheets. Det er et kodesprog der bestemmer hvordan man vil have sit indhold vist. F.eks. hvilke fonte eller farver man vil bruge. Man kan lave sin styling i enten sit &lt;head&gt; ved at lave en &lt;style&gt; -regler- &lt;/style&gt;, man kan gøre det inline på det enkelte element, eller man kan følge best practice og style sin HTML i et separat css dokument (som er det jeg går ud fra). Det er en god ide at lave kommentarer i sin css kode så det er nemmere at finde rundt i (skrives sådan: /* kommentar */).</p>
+                </section>
+
+                <section id="section2">
+                    <h2>CSS selectors</h2>
+                    <p>Bliver brugt til at finde eller vælge HTML elementer ud fra deres element-navn, id, class, attributter m.v.</p>
+                    <h3>Type/element selector:</h3>
+                    <p>Denne selector bruges hvis man vil style alle ens elementer på samme måde. Det kunne f.eks. være alle &lt;p&gt;, &lt;h1&gt;, &lt;section&gt; osv. Hvis det f.eks. er &lt;a&gt; man vil style skriver man i CSS følgende: a {…}  </p>
+                    <h3>Id selector:</h3>
+                    <p>Disse kan bruges hvis man har givet sit element et id. Et id er unikt, det vil sige at man kun kan give id’en til ét enkelt element og det er derfor kun dette ene element man kan style hvis man bruger denne selector. Dette angives i CSS filen med et # foran id-navnet. F.eks. #profileimg {…}.</p>
+                    <h3>Class selector:</h3>
+                    <p>Man kan også vælge at give sine elementer en class. Class virker næsten som et id, men i stedet for at det kun kan bruges på ét element, kan man med class bruge det på flere elementer. F.eks. hvis man på sin side har 5 elementer, og de 3 af dem skal styles ens, så kan man give dem en class og så ville de 3 elementer blive stylet på én gang. De resterende ville ikke blive stylet da de ikke har den samme class. I CSS filen angives en class selector med et punktum. F.eks. .imgbox {…}.</p>
+                    <h3>Attribute selector</h3>
+                    <p>Styler elementer med specifikke attributter. F.eks. input[type="text"] {…}.</p>
+                    <h3>Pseudo-class selector:</h3>
+                    <p>En pseudo-class bruges hvis man vil style en bestemt tilstand af et element. Det kan f.eks. være hvis et element skal se anderledes ud når man holder musen over den (f.eks. hvis man vil have en anden farve når man holder musen over et &lt;a&gt;) ville man i CSS skrive :hover efter selector-navnet (f.eks. a:hover {…}). Andre pseudo-class selectors kan være :link (et ubesøgt link), :visited (et besøgt link), :active (et link der er aktivt) eller :first-child (bruges hvis man f.eks. har flere &lt;p&gt; inden i en section og man kun skal style den første. Ville kunne skrives sådan: section p:first-child {…}).</p>
+                    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Liste over pseudo-classes kan ses her</a>
+                    <h3>Descendant selector:</h3>
+                    <p>Flere type selectors, hvor den ene er efterkommer af den anden, f.eks. nav a – betyder at man vælger alle a elementer der ligger inde i en nav. </p>
+                    <h3>Child selector:</h3>
+                    <p>Eksempel: section>p, styler alle &lt;p&gt; der ligger inden i &lt;section&gt;.</p>
+                    <p>Fungerer næsten som en descendant, men child er første efterkommer, og man vælger derfor kun de elementer der ligger lige inden i parent elementet. F.eks. hvis man har en &lt;section&gt; med en &lt;p&gt; og inde i den &lt;section&gt; også har en &lt;article&gt; med en &lt;p&gt; i, så vælger den kun den &lt;p&gt; der ligger i &lt;section&gt; men ikke den &lt;p&gt; der ligger længere inde i &lt;article&gt;. </p>
+                </section>
+
+                <section id="section3">
+                    <h2>Positioning content</h2>
+                    <p>Det mest basale ved layout i CSS er display attributten. De to mest brugte er block (bruger hele vidden af dens parent element og er der flere ligger de sig under hinanden) og inline (ligger sig ved siden af hinanden horisontalt og når der ikke er mere plads på linjen ligger de sig automatisk ned på næste linje). Bruger man display: none; kan man ikke se elementet.  </p>
+                    <ul>
+                        <li>Block elementer kan f.eks. være &lt;section&gt;, &lt;article&gt; og &lt;div&gt;. </li>
+                        <li>Inline elementer er f.eks. &lt;span&gt; eller &lt;img&gt;.</li>
+                    </ul>
+                    <p>Eksempel</p>
+                    <pre>
+&lt;div&gt;Container
+    &lt;div&gt;Div 1&lt;/div&gt;
+    &lt;div&gt;Div 2&lt;/div&gt;
+    &lt;div&gt;Div 3&lt;/div&gt;
+    &lt;span&gt;Span 1 - Hello&lt;/span&gt;
+    &lt;span&gt;Span 2 - Hello&lt;/span&gt;
+    &lt;span&gt;Span 3 - Hello&lt;/span&gt;
+&lt;/div&gt;+'ø
+                    </pre>
+                    --- BILLEDE AF BOXES ---
+                    <p>Som man kan se, ligger div elementerne under hinanden og fylder hele bredden af sin parent element (container) og span elementerne ligger sig i forlængelse af hinanden.</p>
+                    <p>Man kan angive størrelser på elementerne på forskellige måder. </p>
+                    <ul>
+                        <li>Absolut størrelse, f.eks. width: 150px, kan gøre at hvis der ikke er plads til hele indholdet så ”vælter” det ud over sin container. Er den container browservinduet, så vil der komme en scrollbar så man kan scrolle ud og se det der mangles. </li>
+                        <li>Relativ størrelse, f.eks. width: 50%, hvis man bruger denne vil elementet altid være 50% af sin umiddelbare parent element. </li>
+                    </ul>
+                    <h3>Box sizing</h3>
+                    <p>En kasses størrelse inkluderer også dens padding, border og margin. Det betyder at hvis man sætter en kasse til 100px bred og den har f.eks. padding på 10px så er den i virkeligheden 120px bred. Dette kan man kompensere for ved i CSS at bruge box-sizing: border-box;. Det gør at paddingen ikke vil gøre kassen større men i stedet presse indholdet lidt sammen. </p>
+                    <h3>Float</h3>
+                    <p>Float bruges til at justere indhold. Man kan f.eks. hvis man har et billede med en bredde på 30%, give den float: left; og den vil så ligge sig i venstre side og andet indhold vil wrappe sig rundt om billedet. </p>
+                    --- EKSEMPEL ---
+                    <p></p>
+                    <h3>Overflow</h3>
+                    <p>Hvis man har indhold i et element der fylder mere end dens container, kan man i CSS bruge den attribut der hedder overflow. Man kan sætte overflow i disse tilstande:</p>
+                    <ul>
+                        <li>Visible: Default. Indholdet vises uden at containeren bliver påvirket. Dette betyder at indholdet vil flyde ud over containeren.</li>
+                        <li>Hidden: Indholdet bliver klippet af, så alt hvad der flyder ud over containeren kan ikke ses.</li>
+                        <li>Scroll: Der bliver lagt scrollbars på elementet, også selvom indholdet ikke flyder ud over containeren.</li>
+                        <li>Auto: Hvis indholdet flyder ud over containeren bliver der lavet scrollbars, og passer indholdet ind i containeren er der ingen scrollbars.</li>
+                    </ul>
+                    <h3>Inline-block</h3>
+                    <p>Disse elementer bruger kun den bredde som deres indhold fylder og ligger sig efter hinanden horisontalt. En &lt;div&gt; er som bekendt et block element, men hvis man i CSS giver den display: inline-block; kan man få dem til at ligge sig ved siden af hinanden.</p>                   
+                    <pre>
+&lt;div>&gt;Container
+    &lt;div&gt;Div 1&lt;/div&gt;
+    &lt;div&gt;Div 2&lt;/div&gt;
+    &lt;div&gt;Div 3&lt;/div&gt;
+    &lt;div&gt;Div 4&lt;/div&gt;
+    &lt;div&gt;Div 5&lt;/div&gt;
+    &lt;div&gt;Div 6&lt;/div&gt;
+&lt;/div&gt;
+
+Div {
+Display: inline-block;
+}
+                    </pre>
+                    --- BILLEDE ---
+                    <h3>Position</h3>
+                    <p>Position attributten angiver hvilken positionerings type der anvendes til et element.</p>
+                    <ul>
+                        <li>Static: Default. Indholdet positioneres i forhold til hvor det står i dokumentet og i forhold til dens flows egenskaber.</li>
+                        <li>Absolutte: Elementet er positioneret på et bestemt sted. Der afsættes ikke plads til elementet, da det ikke indgår i flowet, men det følger stadig med ved scroll.</li>
+                        <li>Relative: Elementet bliver rykket i forhold til dens normale flow position. Det har ingen betydning for andre elementer og det kan derfor give overlapning og tomme områder.</li>
+                        <li>Fixed: Elementet flytter sig ikke, heller ikke ved scroll. Den ”sidder fast” i vinduet.</li>
+                    </ul>
+                    <h3>Z-index</h3>
+                    <p>Z-index bruges til at bestemme hvilken rækkefølge elementer skal stables i. Dvs. at hvis man har to elementer og de i HTML’en ligger som mindste element står højere på siden end største element og disse to elementer f.eks. er fixed til samme position, så kan man ikke se det mindste element da den er gemt bag den store. Dette kan man rette ved at give elementerne en z-index, hvor det mindste element har et højere index end det største element. </p>
+                    <h3>Centreret indhold</h3>
+                    <p>En simpel måde at centrere indhold på er at man i sin CSS giver, det element man vil have centreret, en margin der hedder 0 og auto. (margin: 0 auto;). Dette laver margin i top og bund til 0 og giver siderne auto. Dette gør at der kommer lige stor margin på hver side af elementet og det bliver dermed centreret. </p>
+                </section>
+
+                <section id="section4">
+                    <h2>Text styles</h2>
+                    <p>Det er ikke alle computere der har de samme fonte installeret. Derfor skal man huske, hvis man vil have en speciel font, at man skal have noget med i koden der løser dette problem. Det kan man enten gøre ved at tage filen til fonten med i sit projekt og linke til den i sin css, eller man kan vælge at bruge fonte der er hostet af andre. Det kan f.eks. være Adobe Typekit eller Google fonts. Man skal bare lige huske at tjekke hvordan licensen er til den font man gerne vil bruge. Nogle er gratis og må bruges som man har lyst til, nogle er gratis til personligt brug, nogle skal man betale for at må bruge kommercielt og andre skal man betale for lige meget hvad.</p>
+                    <p>Hvis man vælger at bruge Google fonts (gratis løsning), linker til den i sin &lt;head&gt; og fonten bliver hentet når siden hentes. Det betyder at man ikke behøver at tænke på om det nu er en font som alle brugere har før man bruger den.</p>
+                    <p>Man kan (bør) vælge en backup font i tilfælde af at den font man har valgt af en eller anden grund ikke duer. Man kan f.eks. hvis man har valgt Verdana skrive font-family: Verdana, sans-serif; Dermed er man sikker på at den font der vises i tilfælde af at Verdana ikke duer er en standart sans-serif font.</p>
+                    <ul>
+                        <li>Font-style: Man kan her vælge om man vil have sin tekst almindelig eller kursiv (italic eller oblique – men oblique er ikke godt understøttet og ligner bare italic)</li>
+                        <li>Font-size: Bruges til at vælge størrelsen på fonten. Det er bedst at holde sig fra pixel størrelse da det ikke er muligt for brugeren at ændre tekst størrelsen så. Man kan sætte størrelsen med enten keywords (xx-small, x-small, small, medium, large, x-large, xx-large, smaller eller larger). Eller man kan vælge at sætte størrelsen med procenter. F.eks. hvis man sætter font-size til 120% betyder det at den er 20% større end parent elementets størrelse.</li>
+                        <li>Font-weight: Her kan man vælge hvor tyk ens font skal være. Man kan vælge enten normal (som er default) eller bold for at gøre teksten federe. Hvis man har valgt en font med flere font-weights, kan disse defineres med tal i stedet (100, 200, 300, 400, 500, 600, 700, 800 eller 900 – hvor 100 er tyndest og 900 tykkest). </li>
+                        <li>Color: Når man skal sætte sin tekst farve skal man bare skrive: color: farvekode; Farvekoden kan blive skrevet enten som RGB: rgb(0, 0, 0), HEX-kode: #000000, HSL: hsl(0, 0%, 0%). Hvis man gerne vil give farven noget gennemsigtighed (opacity) skal man i stedet bruge RGBa: rgba(0, 0, 0, 0.5) eller HSLa: hsla(0%, 0%, 0%, 0.5).</li>
+                        <a href="../media/kap11.pdf" >Flere tekst styling metoder kan ses i denne PDF lavet af Mette Bruhn Nielsen og Camilla Olesen</a>
+                    </ul>
+                </section>
+
+                <section id="section5">
+                    <h2>Borders and backgrounds</h2>
+                    <p></p>
+                </section>
+
+                <section id="section6">
+                    <h2>Styling tables</h2>
+                    <p>Ligesom ved andre elementer, så kan man style sine tables. En helt standard table viser dataene fra de forskellige celler stillet om som man ville forvente det i et regneark, men uden skillestregerne imellem cellerne. For at det skal se lidt mere indbydende ud, kan man style det ved at give tabellen borders, tilføje padding og alignment eller give det nogle farver. Alle disse måder at style en tabel på, gør ikke kun at tabellen kan blive mere tiltalende visuelt, men det kan også gøre det nemmere at overskue dataene. </p>
+                    <p>Man kan også lave sit website layout med tables. Men personligt ville jeg ikke vælge at bruge tables til layout, men i stedet bruge display: grid, som på en måde er en ny og forbedret måde at lave ”table-layout”.</p>
+                    <p>Side lavet af Hussein Hussein og mig selv, som viser eksempler på hvordan man kan style tables:</p>
+                    <object type="text/html" data="http://chri9g09.web.eadania.dk/StylingTables/" width="100%" height="600px"></object>
+
+                </section>
+
+                <section id="section7">
+                    <h2>Flexbox</h2>
+                    <p></p>
+                </section>
+
+                <section id="section8">
+                    <h2>Animations and transforms</h2>
+                    <p></p>
+                </section>
+
+                <section id="section9">
+                    <h2>Kaskaderegler</h2>
+                    <p>Et regelsæt der definerer hvordan modstridende CSS-deklareringer løses. </p>
+                    <ul>
+                        <li>Specificity: Mere specifik har forrang mod mere generel. 
+                            Hvis man skriver p {color: red;} bliver teksten i alle &lt;p&gt; rød. 
+                            Giver man evt. 4 ud af 10 &lt;p&gt; en klasse, f.eks. blue og i css skriver p.blue (eller bare .blue) så er det man skriver her højere i rang end den generelle p, også selvom den står før p i stylesheetet. Endnu mere specifik er id. Giver man et id til 1 af &lt;p&gt;, så kan man style bare denne ene &lt;p&gt; uden at de styles man har givet til de generelle p’er eller p’er med classes ødelægger noget for den der har id (og omvendt).
+                        </li>
+                        <li>Source order: Seneste deklarering har forrang mod tidligere deklareringer. En browser altid læser fra toppen af et dokument og ned, så hvis man vælger at style det samme to gange er det, det sidste der gælder. F.eks. hvis man på linje 3 i sin css skriver: p {color: red;}, og man så senere på linje 57 skriver: p {color: blue;} så overskriver den det der blev skrevet på linje 3.</li>
+                        <li>Specificity har forrang mod Source order</li>
+                        <li>Undtagelse: !important - men den ødelægger hele ideen med kaskaderegler - undgå den så vidt muligt!</li>
+                    </ul>
+                </section>
+
+                <section id="section10">
+                    <h2>Box-modellen</h2>
+                    <p>Hvert element i HTML kan man sige er en kasse. Der er to typer af kasser: </p>
+                    <ul>
+                        <li>Inline: Placeres på linje efter hinanden (horisontal) og skifter selv linje når der ikke er plads til flere. Det kan f.eks. være &lt;a&gt;, &lt;object&gt;, &lt;img&gt; eller &lt;span&gt;. </li>
+                        <li>Block: Bruger hele vidden af dens parent element. Placerer sig under hinanden (stak). Det kan f.eks. være &lt;section&gt;, &lt;h1&gt;, &lt;article&gt; eller &lt;nav&gt;</li>
+                    </ul>
+                    <img src="../billeder/inter/box-model.JPG" alt="boxmodellen" />
+                    <p>Man kan styre om kasserne skal være det ene eller det andet ved i css at skrive f.eks. img {display: block;} eller h1 {display: inline-block;}.</p>
+                    <h3>CSS Box properties</h3>
+                    <p>Content: f.eks. tekst i et &lt;p&gt; eller grafik som et &lt;img&gt;</p>
+                    <p>Padding: Afstand mellem indhold og ramme. Kassen forbliver samme sted, men presser indholdet sammen inde i kassen.</p>
+                    <p>Border: Kan være synlig eller usynlig. Tykkelsen på border, breder sig ud fra elementet og gør derved elementet større.</p>
+                    <p>Margin: Afstand mellem ramme og tilstødende elementer. Rykker på hele kassen og giver større eller mindre afstand til elementer udenom.</p>
+                </section>
+
+                <section id="section11" class="kildesection">
+                    <hr>
+                    <h6>Kilder:</h6>
+                    <ul>
+                        <li><a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+3+-+CSS/dag3+-+intro+til+css.pdf">PDF udleveret af Niels Østergaard</a></li>
+                        <li>	Mark J. Collins: Pro HTML5 with CSS, JavaScript, and Multimedia – kapitel 2, side 15-27 + kapitel 9, side 163-173 + kapitel 10, side 175-198 + kapitel 11, side 199-218 + kapitel 12, side 219-243 + kapitel 13, side 245-270 + kapitel 14, side 271-285 + kapitel 15, side 287-303</li>
+                        <li><a href="../media/kap9.pdf">Fremlæggelse fra Frederikke Boe Sørensen og Gurli Tonsberg</a></li>
+                        <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp">www.w3schools.com - pseudo-classes</a></li>
+                        <li><a href="../media/kap10.pdf">Fremlæggelse fra Asger Tillemann Petersen og Jesper Vangsgaard Hansen</a></li>
+                        <li><a href="../media/kap11.pdf">Fremlæggelse fra Mette Bruhn Nielsen og Camilla Olesen</a></li>
+                        <li><a href="https://www.w3schools.com/html/html_blocks.asp ">www.w3schools.com - blocks</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+
+            </section>
+            <!-- TILBAGE TIL TOP KNAP -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p id="footertext">&copy; 2017 - <a href='mailto:chri9g09@student.eadania.dk'>Christina Kvistgaard Iversen</a></p>
+                <p id="smallfootertxt">Erhvervsakademi Dania Skive - MMD 1. semester</p>
+            </footer>
+        </div> <!-- Her slutter container -->
+        <!-- TILBAGE TIL TOP SCRIPT -->
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- Link til jQuery bibliotek online (nødvendig til Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+>>>>>>> 97f2b903b15b64d1a95db235badc399c0c2e6049
+</html>

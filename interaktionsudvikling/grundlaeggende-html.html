@@ -1,0 +1,828 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Grundlæggende HTML</title>
+
+        <!-- STYLESHEETS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <link rel="stylesheet" href="../egen_css/style.css" /> <!-- Ligger i mappen css, bruges til at style html siden -->
+
+        <!-- GOOGLEFONT -->
+        <link href="https://fonts.googleapis.com/css?family=Aladin|Quicksand:400,700" rel="stylesheet"> <!-- Link til valgte googlefonts -->
+
+        <!-- FONT AWESOME -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    </head>
+    <body>
+        <!-- CONTAINER TIL SIDEN -->
+        <div class="container">
+
+            <!-- HEADER -->
+            <section class="row">
+                <header>
+                    <p id="headertxt">Læringsportfolio</p>
+                </header>  
+            </section>
+
+            <!-- MAIN CONTENT -->
+            <!-- BOOTSTRAP NAV / MENU -->
+            <section class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Forside <span class="sr-only">(current)</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualisering og design <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../visualisering-og-design/farveteori.html">Farveteori</a></li>
+                                        <li><a href="../visualisering-og-design/designprincipper-og-gestaltlove.html">Designprincipper & Gestaltlove</a></li>
+                                        <li><a href="../visualisering-og-design/typografi.html">Typografi</a></li>
+                                        <li><a href="../visualisering-og-design/foto.html">Foto</a></li>
+                                        <li><a href="../visualisering-og-design/adobe.html">Adobe programmer</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interaktionsudvikling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="internettets-historie.html">Internettets historie</a></li>
+                                        <li><a href="server-og-klient.html">Server & klient</a></li>
+                                        <li class="active"><a href="grundlaeggende-html.html">Grundlæggende HTML</a></li>
+                                        <li><a href="css.html">CSS</a></li>
+                                        <li><a href="layout-med-css-grid-model.html">Layout med CSS Grid model</a></li>
+                                        <li><a href="responsive-design.html">Responsive design</a></li>
+                                        <li><a href="versionsstyring-med-git.html">Versionsstyring med GIT</a></li>
+                                        <li><a href="frameworks.html">Frameworks</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kommunikation og formidling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../kommunikation/design-og-kommunikationsstrategi.html">Design og kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/produktionsmodeller.html">Produktionsmodeller</a></li>
+                                        <li><a href="../kommunikation/informationsarkitektur.html">Informationsarkitektur</a></li>
+                                        <li><a href="../kommunikation/ide-generering.html">Idé generering</a></li>
+                                        <li><a href="../kommunikation/tekst-som-medie-og-journalistiske-grundbegreber.html">Tekst som medie og journalistiske grundbegreber</a></li>
+                                        <li><a href="../kommunikation/visualiseringsvaerktoejer.html">Visualiseringsværktøjer</a></li>
+                                        <li><a href="../kommunikation/storytelling-som-brandingstrategi.html">Storytelling som brandingstrategi</a></li>
+                                        <li><a href="../kommunikation/retorisk-kommunikationsstrategi.html">Retorisk kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/semiotik-teori-om-tegn.html">Semiotik: Teori om tegn</a></li>
+                                        <li><a href="../kommunikation/typografisk-semiotik-skriftbilledet.html">Typografisk semiotik</a></li>
+                                        <li><a href="../kommunikation/visuel-kommunikation.html">Visuel kommunikation</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Virksomheden <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../virksomheden/virksomhedstyper-ide-maal-vision-mission.html">Virksomhedstyper & ide, mål, vision, mission</a></li>
+                                        <li><a href="../virksomheden/vaerdigrundlag-og-vaerdikaede.html">Værdigrundlag-og-værdikæde</a></li>
+                                        <li><a href="../virksomheden/forretningsmodel-og-forretningsplan.html">Forretningsmodel og forretningsplan</a></li>
+                                        <li><a href="../virksomheden/love-og-licenser.html">Love og licenser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekter <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../projekter/prototyping-projekt.html">Prototyping projekt</a></li>
+                                        <li><a href="../projekter/onepage-projekt.html">Onepage projekt</a></li>
+                                        <li><a href="../projekter/laeringsportfolio.html">Læringsportfolio projekt</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </section>
+
+            <!-- INDHOLDET -->
+            <section id="content-container">
+
+                <h1>Grundlæggende HTML</h1>
+                <section id="section1">
+                    <p>Når man skriver kode (HTML, CSS, JavaScript osv.) skal man bruge en editor. Det kan f.eks. være Brackets, Notepad++, Sublime Text eller lignende. Når man skriver kode er det hele ren tekst. Man kan først se resultatet af det man har skrevet når man åbner det i en browser.</p>
+                    <p>Det er en god skik at man, når man koder, lave indryk i sin kode så man kan have et bedre overblik over koden. Det er også en god ide at kommentere sin kode (&lt;!--Kommentar --&gt;), så er det også nemmere hvis andre skal finde rundt i det. </p>
+                    <p>HTML bygges op med 'tags', som bruges til at klassificere og gruppere elementerne på en hjemmeside. En internetbrowser bruger disse tags til at oversætte koden til det vi ser på hjemmesiden.</p>
+                    <p>HTML tags skrives sådan her: &lt;start-tag&gt; indhold &lt;/slut-tag&gt; f.eks. hvis man vil lave en overskrift kan man skrive &lt;h1&gt;Overskrift &lt;/h1&gt;.</p>
+                </section>
+
+                <section id="section2">
+                    <h2>Attributter</h2>
+                    <p>Et start-tag kan indeholde en eller flere attributter. De bliver brugt til at give oplysninger om et element.</p>
+                    <ul>
+                        <li>Lang = sproget som HTML siden bliver skrevet på (f.eks. ”en” for engelsk, eller ”dk” for dansk)</li>
+                        <li>Charset = Fortæller browseren hvilke karakterer der skal bruges, f.eks. skal man skrive utf-8 hvis man vil være sikker på at browseren viser æ, ø og å.</li>
+                        <li>Id = et unikt navn. Kan kun bruges på et enkelt element.</li>
+                        <li>Class = en attribut man kan give til flere elementer der f.eks. skal bruge den samme styling.</li>
+                    </ul>
+                </section>
+
+                <section id="section3">
+                    <h2>Basis opbygning af HTML dokument</h2>
+                    <p>Et HTML dokument bygges op ved først at fortælle browseren at det der følger er et HTML dokument. Herefter Starter man selve HTML’en ved at lave et HTML-tag hvori man også fortæller hvilket sprog siden er på. Inden i HTML-tagget laver man et head-tag og et body-tag. Head-tagget bruges til at skrive de informationer som browseren skal have. Det kan f.eks. være title, metadata, JavaScripts eller links til stylesheets, både interne og eksterne. I body-tagget laver man så alt det indhold som skal kunne ses af en bruger. </p>
+                    <p>Når man starter en ny side, er det en god ide at tjekke om der er hul igennem. Dette gøres traditionelt ved at skrive ”hello world” i &lt;body&gt;. Kan man se dette når man tjekker det i browseren så ved man at det virker.</p>
+                    <h3>Eksempel på en basisopbygning</h3>
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=”da” &gt;
+      &lt;head&gt;
+            &lt;meta charset=”utf-8” &gt;
+            &lt;title&gt;Titel på siden&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+            Hello World.
+            Her er indholdet der ses på siden.
+      &lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </section>
+
+                <section id="section4">
+                    <h2>Semantiske tags</h2>
+                    <p>At noget er semantisk betyder at det har en betydning.</p>
+                    <blockquote>
+                        <p>”Semantik, betydningslære, den gren af lingvistikken, der beskæftiger sig med betydning.”</p>
+                        <footer class="q-footer">Citeret fra denstoredanske.dk</footer>
+                    </blockquote>
+                    <p>At tags er semantiske betyder derfor at de har en betydning, at de beskriver indholdet af hvad der befinder sig inde i tagget. Dette er en fordel for udvikleren som nemmere kan gruppere sine elementer i dokumentet. Det forbedrer også søgemaskinerne, som lettere kan finde frem til det indhold som en bruger leder efter.</p>
+                    <p>Eksempler på semantiske tags:</p>
+                    <ul>
+                        <li>&lt;header&gt;</li>
+                        <li>&lt;h1&gt; - &lt;h6&gt;</li>
+                        <li>&lt;nav&gt; </li>
+                        <li>&lt;section&gt; </li>
+                        <li>&lt;article&gt; </li>
+                        <li>&lt;aside&gt;</li>
+                        <li>&lt;footer&gt;</li>
+                    </ul>
+                </section>
+
+                <section id="section5">
+                    <h2>Tags med forklaringer</h2>
+                    <p>&lt;!DOCTYPE&gt;: Fortæller browseren hvilken version af HTML der bruges.</p>
+                    <p>&lt;html&gt;: Fortæller browseren at det er et HTML dokument der indlæses.</p>
+                    <p>&lt;head&gt;: Her læser browseren oplysninger om HTML siden.</p>
+                    <p>&lt;meta&gt;: Kan f.eks. bruges til at lave sidens beskrivelse eller "forfatter".</p>
+                    <p>&lt;title&gt;: Sidens titel, kan ses som fane-navnet eller bogmærke-navn.</p>
+                    <p>&lt;link&gt;:  Her linkes til f.eks. stylesheets, eksterne fonte eller favicons.</p>
+                    <p>&lt;body&gt;: Dette er delen som brugerne ser, alt content.</p>
+                    <a href="http://chri9g09.web.eadania.dk/IntroTilHTML/sider/side1.html">Flere tags med forklaringer kan ses her</a>
+                </section>
+
+                <section id="section6">
+                    <h2>Phrasing</h2>
+                    <p>Disse elementer bruges til at markere tekst. Indhold kan være phrasing hvis det kan være inde i en sætning, man kan sige at hvis det giver noget mening til teksten så er det phrasing. </p>
+                    <p>Eksempler på phrasing elements:</p>
+                    <p>&lt;strong&gt; - Teksten gøres fed og gør læseren opmærksom på at ordet eller tekststykket er vigtigt.</p>
+                    <p>&lt;em&gt; - Teksten bliver kursiv. Kan bestemme hvor trykket skal lægges i en sætning. På den måde kan de samme ord i en sætning  betyde flere ting alt efter hvor trykket bliver lagt.</p>
+                    <p>&lt;i&gt; - Her bliver teksten også kursiv, men den bruges ikke på samme måde. &lt;i&gt; bruges mere til sætninger og fortæller at sætningen bliver fortalt på en anden måde. F.eks. med en anden stemme, en indre stemme eller når man citerer et andet sprog.</p>
+                    <p>&lt;small&gt; - Teksten bliver mindre. Bliver brugt til formelle ting f.eks. copyright eller disclaimers.</p>
+                    <a href="http://thea0476.web.eadania.dk/Freml%C3%A6ggelse_HTML_kapitel_5/index_Strong.html">Liste af phrasing elements, lavet af holdkammerater Thea Winther-Nielsen og Emilie Skov</a> 
+                </section>
+
+                <section id="section7">
+                    <h2>Tabeller</h2>
+                    <p>Tabeller bliver brugt til tabulære data. F.eks. hvis man har en adresse- eller telefonliste, så kunne det være en god ide at sætte det op i en tabel så dataene kommer til at stå pænt ved siden af, og under hinanden. Det kunne også bruges til hvis man ville lave din egen udgave af det periodiske system, eller måske en morsenøgle. Man laver en tabel ved først at definerer at man starter en tabel inde i den laver man så en række og deri en celle.</p>
+                    <p>Eksempel på simpel tabel:</p>
+                    <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </pre>
+                    <p>Forklaringer på forskellige elementer i en tabel:</p>
+                    <ul>
+                        <li>&lt;table&gt; - Definerer at det er en table element</li>
+                        <li>&lt;tr&gt; - En række i tabellen</li>
+                        <li>&lt;td&gt; - En celle i rækken</li>
+                        <li>&lt;caption&gt; - En titel eller kort forklaring til tabellen</li>
+                        <li>&lt;th&gt; - Bruges til en overskrift inde i tabellen</li>
+                        <li>&lt;th scope=”col”&gt; - Fortæller det er en kolonne overskrift</li>
+                        <li>&lt;th scope=”row”&gt; - Fortæller det er en række overskrift</li>
+                        <li>&lt;colgroup&gt; - Angiver en gruppe af en eller flere kolonner i en tabel til formatering. Nyttig til at style hele kolonner i stedet for at skulle angive en style for enkelte celler i en bestemt kolonne. </li>
+                        <li>&lt;thead&gt; - Kan bruges til at lave en række med &lt;th&gt; celler</li>
+                        <li>&lt;tbody&gt; - Her skriver man de rækker der udgør selve tabellen</li>
+                        <li>&lt;tfoot&gt; - Bruges til afsluttende oplysninger, f.eks. sammenlægninger</li>
+                        <li>Attributten col-span - En celle spænder over flere kolonner</li>
+                        <li>Attributten row-span - En celle spænder over flere rækker</li>
+                    </ul>
+                </section>
+
+                <section id="section8">
+                    <h2>Embedded HTML elementer</h2>
+                    <h3>Images</h3>
+                    <p>&lt;img src=”” alt=”” /&gt;</p>
+                    <ul>
+                        <li>Src bruges til at fortælle browseren hvor den skal finde billedet som skal vises.</li>
+                        <li>Alt er en beskrivende tekst som bruges i tilfælde af at billedet ikke kan vises og teksten bruges også af skærmlæsere.</li>
+                    </ul>
+                    <p>Man kan bruge mange forskellige filformater, men hvis man vil være rimelig sikker på at formatet rent faktisk kan vises, vil det være en god ide at holde sig til JPEG, PNG og GIF.</p>
+                    <h3>Audio</h3>
+                    <pre>
+&lt;audio src=”” /&gt;
+    &lt;p&gt;Tekst der vises hvis audiofilen ikke kan findes eller afspilles&lt;/p&gt;
+&lt;/audio&gt;
+                    </pre>
+                    <ul>
+                        <li>Src bruges til at fortælle browseren hvor den skal finde audiofilen.</li>
+                    </ul>
+                    <p>Der er forskellige boolean (kan kun have 2 tilstande f.eks. ja eller nej, 1 eller 2, sandt eller falsk) attributter som man kan bruge i sin audio element.</p>
+                    <ul>
+                        <li>Preload – lydfilen loades når siden bliver rendered</li>
+                        <li>Autoplay – lydfilen afspilles så snart den er loaded, hvis der ikke er sat controls, kan man kun slå lyden fra ved at slukke lyden på sin device, eller hvis man bruger Firefox eller Opera kan man klikke på det lille lyd-ikon der kommer i fanebladet </li>
+                        <li>Muted – Hvis man skriver dette, kommer der ingen lyd</li>
+                        <li>Loop – Lydfilen bliver ved med at starte forfra</li>
+                        <li>Controls – Man får vist knapper som man kan kontrollere audiofilen med</li>
+                    </ul>
+                    <p>Alle større browsere understøtter audio elementet, men de understøtter ikke alle de samme lydformater. Derfor kan man lade browseren vælge den format det understøtter, ved at angive flere forskellige kilder med forskelligt filformat. For at gøre det hurtigere for browseren at finde ud af om den understøtter det format som filen er, kan man tilføje type-attributten til sin source element.</p>
+                    <p>Eksempel:</p>
+                    <pre>
+&lt;audio autoplay controls&gt;
+    &lt;source&gt; src=”lydfil.oog” type=”audio/ogg” /&gt;
+    &lt;source&gt; src=”lydfil.mp3” type=”audio/mp3” /&gt;
+    &lt;p&gt;Tekst der vises hvis filformaterne ikke understøttes eller filen ikke kan findes.lt;/p&gt;
+&lt;/audio&gt;
+                    </pre>
+                    <h3>Video</h3>
+                    <pre>
+&lt;video src=”” autoplay /&gt;
+    &lt;p&gt;Tekst der vises hvis videofilen ikke kan findes eller afspilles&lt;/p&gt;
+&lt;/video&gt;
+                    </pre>
+                    <ul>
+                        <li>Src bruges til at fortælle browseren hvor den skal finde videofilen.</li>
+                    </ul>
+                    <p>Video-elementet har de samme boolean attributter som audio elementet. Preload, autoplay, muted, loop og controls.</p>
+                    <p>Alle større browsere understøtter MP4 så hvis ens video fil er i denne format går man ikke galt i byen. Autoplay får videoen til at afspille af sig selv, men hvis man ikke har controls på også, kan man ikke pause eller genstarte videoen. Til forskel fra audio elementet kan man her højreklikke på videoen og vælge at få vist controls.</p>
+                    <p>I video-elementet kan man også tilføje en ekstra attribut der hedder poster. Poster er et billede som man kan få vist i stedet for videoens første frame når videoen endnu ikke er blevet afspillet.</p>
+                    <p>Eksempel:</p>
+                    <pre>
+&lt;video controls poster=”link til filens placering, navn og format”&gt;
+    &lt;p&gt;Tekst der vises hvis filformaterne ikke understøttes eller filen ikke kan findes.lt;/p&gt;
+&lt;/video&gt;
+                    </pre>
+                    <h3>HTML5 plugins</h3>
+                    <p>&lt;object&gt; er et element man kan bruge til at embed multimedia og endda andre websider i sin HTML. Man skal bare sørge for at man bruger type-attributten og får angivet den rette <a href=”https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types”>MIME-type</a>(en standardiseret måde at angive arten og formatet af et dokument på).</p>
+                    <p>Eksempel:</p>
+                    <pre>
+&lt;object data="eksempel.pdf" type="application/pdf" width="60%" height="600em"&gt;&lt;/object&gt;
+                    </pre>
+                    <a href="http://niko5603.web.eadania.dk/html_embed/">Eksempler lavet af holdkammerater Sara Middelhede og Nikolaj Istrup Andersen</a>
+                </section>
+
+                <section id="section9">
+                    <h2>HTML form elementer</h2>
+                    <p>&lt;form&gt; bruges til at lave formularer af forskellige slags, det bruges de steder hvor brugeren skal indtaste data eller informationer. Når informationen er skrevet og man har trykket på submit knappen bliver det hele sendt til en server og HTML’en bliver opdateret. Det kan f.eks. være en kontakt formular, en formular til at tilmelde sig et nyhedsbrev eller et søgefelt. </p>
+                    <h3>Input elements</h3>
+                    <p>Bruges til at skrive information ind i en form. Meget af det data der bliver indtastet i en form er tekst, og dette kan gøres i f.eks. en textbox. </p>
+                    <p>En textbox kan have forskellige type-funktioner: </p>
+                    <ul>
+                        <li>Type=”text”: Dette er default hvis type ikke bliver specificeret. Laver man linebreaks, bliver disse fjernet når man submitter, så skal man bruge dem, er det bedre at bruge textarea.</li>
+                        <li>Type=”email”: Virker som en normal textbox, men den kan validere om der er en email der bliver skrevet. Den kan ikke tjekke om email adressen findes eller om domænenavnet er rigtig.</li>
+                        <li>Type=”password”: Viser det indtastede som ”pletter”. Dette er dog kun en feature.</li>
+                        <li>Type=”search”: Fungerer som en normal text type, men der kan være anderledes styling på.</li>
+                        <li>Type=”tel”: Bruges til felter der skal have telefonnumre. Det bruges kun til at gøre feltet semantisk, da der er for mange forskellige måder at skrive telefonnumre på i verden, så den validerer ikke noget (man kan selv lave nogle valideringsregler ved at bruge pattern attributten).</li>
+                        <li>Type=”url”: Ligesom email type, så kan denne ikke validere om det indtastede rent faktisk findes. Den kan kun tjekke om det er skrevet som en url normalt ville skulle skrives. Det er ikke nok at skrive f.eks. facebook.com eller www.facebook.com, man skal skrive hele url’en (https://www.facebook.com). </li>
+                    </ul>
+                    <p>Et andet element man kan bruge er textarea. Det er ikke et ”rigtigt” input element, men den fungerer lidt ligesom et. </p>
+                    <p>En textarea har nogle forskellige attributter:</p>
+                    <ul>
+                        <li>Cols: Specificerer hvor mange karakterer der skal vises på en enkelt linje.</li>
+                        <li>Rows: Fortæller hvor mange rækker af tekst man skal kunne se. Der kan godt være flere rækker end dette, men man skal scroll for at se dem.</li>
+                        <li>Wrap: Dette er hvordan man vil have sin tekst til at wrappe. </li>
+                    </ul>
+                    <p>Både tekst baserede input elementer og textarea elementet har flere fælles attributter:</p>
+                    <ul>
+                        <li>Inputmode: Til email, password, text eller url. Giver et hint til hvilket keyboard der skal vises. Dette er vigtig til enheder hvor touch er slået til.</li>
+                        <li>Maxlength: Det højeste antal karakterer der kan blive indtastet.</li>
+                        <li>Minlength: Det mindste antal karakterer der skal indtastes.</li>
+                        <li>Pattern: Specificerer en regex (regular expression) som bruges til at validerer input dataene. Kan ikke bruges på textarea.</li>
+                        <li>Placeholder: Kan man bruge til at lave eksempel-tekst eller label-tekst. Bliver kun vist når feltet er tomt og forsvinder når man klikker i feltet eller skriver første karakter.</li>
+                        <li>Size: Den fysiske størrelse på input elementet. Som default er den 20, hvilket betyder at der teoretisk set, kan ses 20 karakterer i feltet. Virker ikke til textarea, der skal bruges cols og rows i stedet.</li>
+                        <li>Spellcheck: En boolean attribut der indikerer om det indtastede data skal tjekkes for stavefejl og grammatikfejl. </li>
+                    </ul>
+                    <h3>Selection elements </h3>
+                    <p>Der er flere elementer der giver dig mulighed for at præsentere et fast sæt af valgmuligheder på en formular:</p>
+                    <ul>
+                        <li>Checkbox: En gruppe af forslag hvor man kan vælge mere end én.</li>
+                        <li>Radiobutton: En gruppe af forslag hvor man kun kan vælge én.</li>
+                        <li>Drop down lists: En liste hvor man kan vælge én ting.</li>
+                        <li>Multi-select lists: Som en dropdownliste, men man kan vælge mere end én ting.</li>
+                    </ul>
+                    <h3>Andre diverse typer</h3>
+                    <ul>
+                        <li>Number: Virker som en textbox, men den tillader kun numerisk input. </li>
+                        <li>Color: Viser en lille prøve af den valgte farve, hvis man klikker på den åbner den en color picker.  Ved submit bliver den valgte farve sendt med som RGB hexkode f.eks. #ffffff for hvid.</li>
+                        <li>File: Bruges til at uploade filer at sende med. Hvis man skal kunne vælge mere end én fil, skal man tilføje attributten ”multiple” i tagget. Man kan også vælge hvilken type fil man vil tillade, ved at tilføje attributten accepts=””. Her kan man skrive hvilke typer der tillades i en kommasepareret liste med MIME types som f.eks. text/css. Man kan også vælge at bruge et wildcard som text/*, image/*, audio/* eller video/* eller man kan liste en række filudvidelser som f.eks. accepts=”.jpg, .gif”.</li>
+                        <li>Range: Her kan man lave en slider-bar til at vælge en upræcis numerisk værdi. Værdien er ikke vigtig for brugeren, da det de ser er en slider der er sat et bestemt sted og ikke tallene bagved. Man kunne f.eks. bruge det til at lave en slider hvor man skulle bedømme hvor tilfreds man er med et eller andet. I den ene ende kunne man skrive 0% tilfreds og i den anden 100% tilfreds og brugeren skulle så vælge hvor tilfredse de er ved at sætte slideren ca. der hvor de mener det passer.</li>
+                    </ul>
+                    <h3>Date and time data typer</h3>
+                    <ul>
+                        <li>Date: En dato uden nogen form for tidsangivelse.</li>
+                        <li>Datetime-local: Giver dato og tid, hvor klokkeslættet er det lokale tidspunkt for browseren.</li>
+                        <li>Time: Lokal tid.</li>
+                        <li>Month: Et enkelt specifikt år og måned.</li>
+                        <li>Week: En enkelt specifik uge, skrevet dom årstal og ugenummer (1-53).</li>
+                    </ul>
+                </section>
+
+                <section id="section10" class="kildesection">
+                    <hr>
+                    <h6>Kilder:</h6>
+                    <ul>
+                        <li><a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+2+-+HTML/Intro+til+HTML.pdf">PDF udleveret af Niels Østergaard</a></li>
+                        <li><a href="http://chri9g09.web.eadania.dk/IntroTilHTML/index.html">Min intro-side til HTML</a></li>
+                        <li>Mark J. Collins: Pro HTML5 with CSS, JavaScript, and Multimedia – kapitel 1, side 5 + kapitel 5, side 81-101 + kapitel 6, side 103-113 + kapitel 7, side 115-130 + kapitel 8, side 131-159</li>
+                        <li><a href="../media/kap5.pdf">Fremlæggelse fra Thea Winther-Nielsen og Emilie Skov</a></li>
+                        <li><a href="http://niko5603.web.eadania.dk/html_embed/">Fremlæggelse fra Sara Middelhede og Nikolaj Istrup Andersen</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">developer.mozilla.org</a></li>
+                        <li><a href="https://www.w3schools.com/tags/tag_object.asp">www.w3schools.com</a></li>
+                        <li><a href="../media/kap8.pdf">Fremlæggelse fra Kevin Feliciano Nielsen og Joakim Bram Ziou</a></li>
+                    </ul>
+                </section>
+
+            </section>
+            <!-- TILBAGE TIL TOP KNAP -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p id="footertext">&copy; 2017 - <a href='mailto:chri9g09@student.eadania.dk'>Christina Kvistgaard Iversen</a></p>
+                <p id="smallfootertxt">Erhvervsakademi Dania Skive - MMD 1. semester</p>
+            </footer>
+        </div> <!-- Her slutter container -->
+        <!-- TILBAGE TIL TOP SCRIPT -->
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- Link til jQuery bibliotek online (nødvendig til Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+=======
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <title>Grundlæggende HTML</title>
+
+        <!-- STYLESHEETS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <link rel="stylesheet" href="../egen_css/style.css" /> <!-- Ligger i mappen css, bruges til at style html siden -->
+
+        <!-- GOOGLEFONT -->
+        <link href="https://fonts.googleapis.com/css?family=Aladin|Quicksand:400,700" rel="stylesheet"> <!-- Link til valgte googlefonts -->
+
+        <!-- FONT AWESOME -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    </head>
+    <body>
+        <!-- CONTAINER TIL SIDEN -->
+        <div class="container">
+
+            <!-- HEADER -->
+            <section class="row">
+                <header>
+                    <p id="headertxt">Læringsportfolio</p>
+                </header>  
+            </section>
+
+            <!-- MAIN CONTENT -->
+            <!-- BOOTSTRAP NAV / MENU -->
+            <section class="row">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Forside <span class="sr-only">(current)</span></a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualisering og design <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../visualisering-og-design/farveteori.html">Farveteori</a></li>
+                                        <li><a href="../visualisering-og-design/designprincipper-og-gestaltlove.html">Designprincipper & Gestaltlove</a></li>
+                                        <li><a href="../visualisering-og-design/typografi.html">Typografi</a></li>
+                                        <li><a href="../visualisering-og-design/foto.html">Foto</a></li>
+                                        <li><a href="../visualisering-og-design/adobe.html">Adobe programmer</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interaktionsudvikling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="internettets-historie.html">Internettets historie</a></li>
+                                        <li><a href="server-og-klient.html">Server & klient</a></li>
+                                        <li class="active"><a href="grundlaeggende-html.html">Grundlæggende HTML</a></li>
+                                        <li><a href="css.html">CSS</a></li>
+                                        <li><a href="layout-med-css-grid-model.html">Layout med CSS Grid model</a></li>
+                                        <li><a href="responsive-design.html">Responsive design</a></li>
+                                        <li><a href="versionsstyring-med-git.html">Versionsstyring med GIT</a></li>
+                                        <li><a href="frameworks.html">Frameworks</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kommunikation og formidling <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../kommunikation/design-og-kommunikationsstrategi.html">Design og kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/produktionsmodeller.html">Produktionsmodeller</a></li>
+                                        <li><a href="../kommunikation/informationsarkitektur.html">Informationsarkitektur</a></li>
+                                        <li><a href="../kommunikation/ide-generering.html">Idé generering</a></li>
+                                        <li><a href="../kommunikation/tekst-som-medie-og-journalistiske-grundbegreber.html">Tekst som medie og journalistiske grundbegreber</a></li>
+                                        <li><a href="../kommunikation/visualiseringsvaerktoejer.html">Visualiseringsværktøjer</a></li>
+                                        <li><a href="../kommunikation/storytelling-som-brandingstrategi.html">Storytelling som brandingstrategi</a></li>
+                                        <li><a href="../kommunikation/retorisk-kommunikationsstrategi.html">Retorisk kommunikationsstrategi</a></li>
+                                        <li><a href="../kommunikation/semiotik-teori-om-tegn.html">Semiotik: Teori om tegn</a></li>
+                                        <li><a href="../kommunikation/typografisk-semiotik-skriftbilledet.html">Typografisk semiotik</a></li>
+                                        <li><a href="../kommunikation/visuel-kommunikation.html">Visuel kommunikation</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Virksomheden <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../virksomheden/virksomhedstyper-ide-maal-vision-mission.html">Virksomhedstyper & ide, mål, vision, mission</a></li>
+                                        <li><a href="../virksomheden/vaerdigrundlag-og-vaerdikaede.html">Værdigrundlag-og-værdikæde</a></li>
+                                        <li><a href="../virksomheden/forretningsmodel-og-forretningsplan.html">Forretningsmodel og forretningsplan</a></li>
+                                        <li><a href="../virksomheden/love-og-licenser.html">Love og licenser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekter <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../projekter/prototyping-projekt.html">Prototyping projekt</a></li>
+                                        <li><a href="../projekter/onepage-projekt.html">Onepage projekt</a></li>
+                                        <li><a href="../projekter/laeringsportfolio.html">Læringsportfolio projekt</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </section>
+
+            <!-- INDHOLDET -->
+            <section id="content-container">
+
+                <h1>Grundlæggende HTML</h1>
+                <section id="section1">
+                    <p>Når man skriver kode (HTML, CSS, JavaScript osv.) skal man bruge en editor. Det kan f.eks. være Brackets, Notepad++, Sublime Text eller lignende. Når man skriver kode er det hele ren tekst. Man kan først se resultatet af det man har skrevet når man åbner det i en browser.</p>
+                    <p>Det er en god skik at man, når man koder, lave indryk i sin kode så man kan have et bedre overblik over koden. Det er også en god ide at kommentere sin kode (&lt;!--Kommentar --&gt;), så er det også nemmere hvis andre skal finde rundt i det. </p>
+                    <p>HTML bygges op med 'tags', som bruges til at klassificere og gruppere elementerne på en hjemmeside. En internetbrowser bruger disse tags til at oversætte koden til det vi ser på hjemmesiden.</p>
+                    <p>HTML tags skrives sådan her: &lt;start-tag&gt; indhold &lt;/slut-tag&gt; f.eks. hvis man vil lave en overskrift kan man skrive &lt;h1&gt;Overskrift &lt;/h1&gt;.</p>
+                </section>
+
+                <section id="section2">
+                    <h2>Attributter</h2>
+                    <p>Et start-tag kan indeholde en eller flere attributter. De bliver brugt til at give oplysninger om et element.</p>
+                    <ul>
+                        <li>Lang = sproget som HTML siden bliver skrevet på (f.eks. ”en” for engelsk, eller ”dk” for dansk)</li>
+                        <li>Charset = Fortæller browseren hvilke karakterer der skal bruges, f.eks. skal man skrive utf-8 hvis man vil være sikker på at browseren viser æ, ø og å.</li>
+                        <li>Id = et unikt navn. Kan kun bruges på et enkelt element.</li>
+                        <li>Class = en attribut man kan give til flere elementer der f.eks. skal bruge den samme styling.</li>
+                    </ul>
+                </section>
+
+                <section id="section3">
+                    <h2>Basis opbygning af HTML dokument</h2>
+                    <p>Et HTML dokument bygges op ved først at fortælle browseren at det der følger er et HTML dokument. Herefter Starter man selve HTML’en ved at lave et HTML-tag hvori man også fortæller hvilket sprog siden er på. Inden i HTML-tagget laver man et head-tag og et body-tag. Head-tagget bruges til at skrive de informationer som browseren skal have. Det kan f.eks. være title, metadata, JavaScripts eller links til stylesheets, både interne og eksterne. I body-tagget laver man så alt det indhold som skal kunne ses af en bruger. </p>
+                    <p>Når man starter en ny side, er det en god ide at tjekke om der er hul igennem. Dette gøres traditionelt ved at skrive ”hello world” i &lt;body&gt;. Kan man se dette når man tjekker det i browseren så ved man at det virker.</p>
+                    <h3>Eksempel på en basisopbygning</h3>
+                    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=”da” &gt;
+      &lt;head&gt;
+            &lt;meta charset=”utf-8” &gt;
+            &lt;title&gt;Titel på siden&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+            Hello World.
+            Her er indholdet der ses på siden.
+      &lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+                </section>
+
+                <section id="section4">
+                    <h2>Semantiske tags</h2>
+                    <p>At noget er semantisk betyder at det har en betydning.</p>
+                    <blockquote>
+                        <p>”Semantik, betydningslære, den gren af lingvistikken, der beskæftiger sig med betydning.”</p>
+                        <footer class="q-footer">Citeret fra denstoredanske.dk</footer>
+                    </blockquote>
+                    <p>At tags er semantiske betyder derfor at de har en betydning, at de beskriver indholdet af hvad der befinder sig inde i tagget. Dette er en fordel for udvikleren som nemmere kan gruppere sine elementer i dokumentet. Det forbedrer også søgemaskinerne, som lettere kan finde frem til det indhold som en bruger leder efter.</p>
+                    <p>Eksempler på semantiske tags:</p>
+                    <ul>
+                        <li>&lt;header&gt;</li>
+                        <li>&lt;h1&gt; - &lt;h6&gt;</li>
+                        <li>&lt;nav&gt; </li>
+                        <li>&lt;section&gt; </li>
+                        <li>&lt;article&gt; </li>
+                        <li>&lt;aside&gt;</li>
+                        <li>&lt;footer&gt;</li>
+                    </ul>
+                </section>
+
+                <section id="section5">
+                    <h2>Tags med forklaringer</h2>
+                    <p>&lt;!DOCTYPE&gt;: Fortæller browseren hvilken version af HTML der bruges.</p>
+                    <p>&lt;html&gt;: Fortæller browseren at det er et HTML dokument der indlæses.</p>
+                    <p>&lt;head&gt;: Her læser browseren oplysninger om HTML siden.</p>
+                    <p>&lt;meta&gt;: Kan f.eks. bruges til at lave sidens beskrivelse eller "forfatter".</p>
+                    <p>&lt;title&gt;: Sidens titel, kan ses som fane-navnet eller bogmærke-navn.</p>
+                    <p>&lt;link&gt;:  Her linkes til f.eks. stylesheets, eksterne fonte eller favicons.</p>
+                    <p>&lt;body&gt;: Dette er delen som brugerne ser, alt content.</p>
+                    <a href="http://chri9g09.web.eadania.dk/IntroTilHTML/sider/side1.html">Flere tags med forklaringer kan ses her</a>
+                </section>
+
+                <section id="section6">
+                    <h2>Phrasing</h2>
+                    <p>Disse elementer bruges til at markere tekst. Indhold kan være phrasing hvis det kan være inde i en sætning, man kan sige at hvis det giver noget mening til teksten så er det phrasing. </p>
+                    <p>Eksempler på phrasing elements:</p>
+                    <p>&lt;strong&gt; - Teksten gøres fed og gør læseren opmærksom på at ordet eller tekststykket er vigtigt.</p>
+                    <p>&lt;em&gt; - Teksten bliver kursiv. Kan bestemme hvor trykket skal lægges i en sætning. På den måde kan de samme ord i en sætning  betyde flere ting alt efter hvor trykket bliver lagt.</p>
+                    <p>&lt;i&gt; - Her bliver teksten også kursiv, men den bruges ikke på samme måde. &lt;i&gt; bruges mere til sætninger og fortæller at sætningen bliver fortalt på en anden måde. F.eks. med en anden stemme, en indre stemme eller når man citerer et andet sprog.</p>
+                    <p>&lt;small&gt; - Teksten bliver mindre. Bliver brugt til formelle ting f.eks. copyright eller disclaimers.</p>
+                    <a href="http://thea0476.web.eadania.dk/Freml%C3%A6ggelse_HTML_kapitel_5/index_Strong.html">Liste af phrasing elements, lavet af holdkammerater Thea Winther-Nielsen og Emilie Skov</a> 
+                </section>
+
+                <section id="section7">
+                    <h2>Tabeller</h2>
+                    <p>Tabeller bliver brugt til tabulære data. F.eks. hvis man har en adresse- eller telefonliste, så kunne det være en god ide at sætte det op i en tabel så dataene kommer til at stå pænt ved siden af, og under hinanden. Det kunne også bruges til hvis man ville lave din egen udgave af det periodiske system, eller måske en morsenøgle. Man laver en tabel ved først at definerer at man starter en tabel inde i den laver man så en række og deri en celle.</p>
+                    <p>Eksempel på simpel tabel:</p>
+                    <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                    </pre>
+                    <p>Forklaringer på forskellige elementer i en tabel:</p>
+                    <ul>
+                        <li>&lt;table&gt; - Definerer at det er en table element</li>
+                        <li>&lt;tr&gt; - En række i tabellen</li>
+                        <li>&lt;td&gt; - En celle i rækken</li>
+                        <li>&lt;caption&gt; - En titel eller kort forklaring til tabellen</li>
+                        <li>&lt;th&gt; - Bruges til en overskrift inde i tabellen</li>
+                        <li>&lt;th scope=”col”&gt; - Fortæller det er en kolonne overskrift</li>
+                        <li>&lt;th scope=”row”&gt; - Fortæller det er en række overskrift</li>
+                        <li>&lt;colgroup&gt; - Angiver en gruppe af en eller flere kolonner i en tabel til formatering. Nyttig til at style hele kolonner i stedet for at skulle angive en style for enkelte celler i en bestemt kolonne. </li>
+                        <li>&lt;thead&gt; - Kan bruges til at lave en række med &lt;th&gt; celler</li>
+                        <li>&lt;tbody&gt; - Her skriver man de rækker der udgør selve tabellen</li>
+                        <li>&lt;tfoot&gt; - Bruges til afsluttende oplysninger, f.eks. sammenlægninger</li>
+                        <li>Attributten col-span - En celle spænder over flere kolonner</li>
+                        <li>Attributten row-span - En celle spænder over flere rækker</li>
+                    </ul>
+                </section>
+
+                <section id="section8">
+                    <h2>Embedded HTML elementer</h2>
+                    <h3>Images</h3>
+                    <p>&lt;img src=”” alt=”” /&gt;</p>
+                    <ul>
+                        <li>Src bruges til at fortælle browseren hvor den skal finde billedet som skal vises.</li>
+                        <li>Alt er en beskrivende tekst som bruges i tilfælde af at billedet ikke kan vises og teksten bruges også af skærmlæsere.</li>
+                    </ul>
+                    <p>Man kan bruge mange forskellige filformater, men hvis man vil være rimelig sikker på at formatet rent faktisk kan vises, vil det være en god ide at holde sig til JPEG, PNG og GIF.</p>
+                    <h3>Audio</h3>
+                    <pre>
+&lt;audio src=”” /&gt;
+    &lt;p&gt;Tekst der vises hvis audiofilen ikke kan findes eller afspilles&lt;/p&gt;
+&lt;/audio&gt;
+                    </pre>
+                    <ul>
+                        <li>Src bruges til at fortælle browseren hvor den skal finde audiofilen.</li>
+                    </ul>
+                    <p>Der er forskellige boolean (kan kun have 2 tilstande f.eks. ja eller nej, 1 eller 2, sandt eller falsk) attributter som man kan bruge i sin audio element.</p>
+                    <ul>
+                        <li>Preload – lydfilen loades når siden bliver rendered</li>
+                        <li>Autoplay – lydfilen afspilles så snart den er loaded, hvis der ikke er sat controls, kan man kun slå lyden fra ved at slukke lyden på sin device, eller hvis man bruger Firefox eller Opera kan man klikke på det lille lyd-ikon der kommer i fanebladet </li>
+                        <li>Muted – Hvis man skriver dette, kommer der ingen lyd</li>
+                        <li>Loop – Lydfilen bliver ved med at starte forfra</li>
+                        <li>Controls – Man får vist knapper som man kan kontrollere audiofilen med</li>
+                    </ul>
+                    <p>Alle større browsere understøtter audio elementet, men de understøtter ikke alle de samme lydformater. Derfor kan man lade browseren vælge den format det understøtter, ved at angive flere forskellige kilder med forskelligt filformat. For at gøre det hurtigere for browseren at finde ud af om den understøtter det format som filen er, kan man tilføje type-attributten til sin source element.</p>
+                    <p>Eksempel:</p>
+                    <pre>
+&lt;audio autoplay controls&gt;
+    &lt;source&gt; src=”lydfil.oog” type=”audio/ogg” /&gt;
+    &lt;source&gt; src=”lydfil.mp3” type=”audio/mp3” /&gt;
+    &lt;p&gt;Tekst der vises hvis filformaterne ikke understøttes eller filen ikke kan findes.lt;/p&gt;
+&lt;/audio&gt;
+                    </pre>
+                    <h3>Video</h3>
+                    <pre>
+&lt;video src=”” autoplay /&gt;
+    &lt;p&gt;Tekst der vises hvis videofilen ikke kan findes eller afspilles&lt;/p&gt;
+&lt;/video&gt;
+                    </pre>
+                    <ul>
+                        <li>Src bruges til at fortælle browseren hvor den skal finde videofilen.</li>
+                    </ul>
+                    <p>Video-elementet har de samme boolean attributter som audio elementet. Preload, autoplay, muted, loop og controls.</p>
+                    <p>Alle større browsere understøtter MP4 så hvis ens video fil er i denne format går man ikke galt i byen. Autoplay får videoen til at afspille af sig selv, men hvis man ikke har controls på også, kan man ikke pause eller genstarte videoen. Til forskel fra audio elementet kan man her højreklikke på videoen og vælge at få vist controls.</p>
+                    <p>I video-elementet kan man også tilføje en ekstra attribut der hedder poster. Poster er et billede som man kan få vist i stedet for videoens første frame når videoen endnu ikke er blevet afspillet.</p>
+                    <p>Eksempel:</p>
+                    <pre>
+&lt;video controls poster=”link til filens placering, navn og format”&gt;
+    &lt;p&gt;Tekst der vises hvis filformaterne ikke understøttes eller filen ikke kan findes.lt;/p&gt;
+&lt;/video&gt;
+                    </pre>
+                    <h3>HTML5 plugins</h3>
+                    <p>&lt;object&gt; er et element man kan bruge til at embed multimedia og endda andre websider i sin HTML. Man skal bare sørge for at man bruger type-attributten og får angivet den rette <a href=”https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types”>MIME-type</a>(en standardiseret måde at angive arten og formatet af et dokument på).</p>
+                    <p>Eksempel:</p>
+                    <pre>
+&lt;object data="eksempel.pdf" type="application/pdf" width="60%" height="600em"&gt;&lt;/object&gt;
+                    </pre>
+                    <a href="http://niko5603.web.eadania.dk/html_embed/">Eksempler lavet af holdkammerater Sara Middelhede og Nikolaj Istrup Andersen</a>
+                </section>
+
+                <section id="section9">
+                    <h2>HTML form elementer</h2>
+                    <p>&lt;form&gt; bruges til at lave formularer af forskellige slags, det bruges de steder hvor brugeren skal indtaste data eller informationer. Når informationen er skrevet og man har trykket på submit knappen bliver det hele sendt til en server og HTML’en bliver opdateret. Det kan f.eks. være en kontakt formular, en formular til at tilmelde sig et nyhedsbrev eller et søgefelt. </p>
+                    <h3>Input elements</h3>
+                    <p>Bruges til at skrive information ind i en form. Meget af det data der bliver indtastet i en form er tekst, og dette kan gøres i f.eks. en textbox. </p>
+                    <p>En textbox kan have forskellige type-funktioner: </p>
+                    <ul>
+                        <li>Type=”text”: Dette er default hvis type ikke bliver specificeret. Laver man linebreaks, bliver disse fjernet når man submitter, så skal man bruge dem, er det bedre at bruge textarea.</li>
+                        <li>Type=”email”: Virker som en normal textbox, men den kan validere om der er en email der bliver skrevet. Den kan ikke tjekke om email adressen findes eller om domænenavnet er rigtig.</li>
+                        <li>Type=”password”: Viser det indtastede som ”pletter”. Dette er dog kun en feature.</li>
+                        <li>Type=”search”: Fungerer som en normal text type, men der kan være anderledes styling på.</li>
+                        <li>Type=”tel”: Bruges til felter der skal have telefonnumre. Det bruges kun til at gøre feltet semantisk, da der er for mange forskellige måder at skrive telefonnumre på i verden, så den validerer ikke noget (man kan selv lave nogle valideringsregler ved at bruge pattern attributten).</li>
+                        <li>Type=”url”: Ligesom email type, så kan denne ikke validere om det indtastede rent faktisk findes. Den kan kun tjekke om det er skrevet som en url normalt ville skulle skrives. Det er ikke nok at skrive f.eks. facebook.com eller www.facebook.com, man skal skrive hele url’en (https://www.facebook.com). </li>
+                    </ul>
+                    <p>Et andet element man kan bruge er textarea. Det er ikke et ”rigtigt” input element, men den fungerer lidt ligesom et. </p>
+                    <p>En textarea har nogle forskellige attributter:</p>
+                    <ul>
+                        <li>Cols: Specificerer hvor mange karakterer der skal vises på en enkelt linje.</li>
+                        <li>Rows: Fortæller hvor mange rækker af tekst man skal kunne se. Der kan godt være flere rækker end dette, men man skal scroll for at se dem.</li>
+                        <li>Wrap: Dette er hvordan man vil have sin tekst til at wrappe. </li>
+                    </ul>
+                    <p>Både tekst baserede input elementer og textarea elementet har flere fælles attributter:</p>
+                    <ul>
+                        <li>Inputmode: Til email, password, text eller url. Giver et hint til hvilket keyboard der skal vises. Dette er vigtig til enheder hvor touch er slået til.</li>
+                        <li>Maxlength: Det højeste antal karakterer der kan blive indtastet.</li>
+                        <li>Minlength: Det mindste antal karakterer der skal indtastes.</li>
+                        <li>Pattern: Specificerer en regex (regular expression) som bruges til at validerer input dataene. Kan ikke bruges på textarea.</li>
+                        <li>Placeholder: Kan man bruge til at lave eksempel-tekst eller label-tekst. Bliver kun vist når feltet er tomt og forsvinder når man klikker i feltet eller skriver første karakter.</li>
+                        <li>Size: Den fysiske størrelse på input elementet. Som default er den 20, hvilket betyder at der teoretisk set, kan ses 20 karakterer i feltet. Virker ikke til textarea, der skal bruges cols og rows i stedet.</li>
+                        <li>Spellcheck: En boolean attribut der indikerer om det indtastede data skal tjekkes for stavefejl og grammatikfejl. </li>
+                    </ul>
+                    <h3>Selection elements </h3>
+                    <p>Der er flere elementer der giver dig mulighed for at præsentere et fast sæt af valgmuligheder på en formular:</p>
+                    <ul>
+                        <li>Checkbox: En gruppe af forslag hvor man kan vælge mere end én.</li>
+                        <li>Radiobutton: En gruppe af forslag hvor man kun kan vælge én.</li>
+                        <li>Drop down lists: En liste hvor man kan vælge én ting.</li>
+                        <li>Multi-select lists: Som en dropdownliste, men man kan vælge mere end én ting.</li>
+                    </ul>
+                    <h3>Andre diverse typer</h3>
+                    <ul>
+                        <li>Number: Virker som en textbox, men den tillader kun numerisk input. </li>
+                        <li>Color: Viser en lille prøve af den valgte farve, hvis man klikker på den åbner den en color picker.  Ved submit bliver den valgte farve sendt med som RGB hexkode f.eks. #ffffff for hvid.</li>
+                        <li>File: Bruges til at uploade filer at sende med. Hvis man skal kunne vælge mere end én fil, skal man tilføje attributten ”multiple” i tagget. Man kan også vælge hvilken type fil man vil tillade, ved at tilføje attributten accepts=””. Her kan man skrive hvilke typer der tillades i en kommasepareret liste med MIME types som f.eks. text/css. Man kan også vælge at bruge et wildcard som text/*, image/*, audio/* eller video/* eller man kan liste en række filudvidelser som f.eks. accepts=”.jpg, .gif”.</li>
+                        <li>Range: Her kan man lave en slider-bar til at vælge en upræcis numerisk værdi. Værdien er ikke vigtig for brugeren, da det de ser er en slider der er sat et bestemt sted og ikke tallene bagved. Man kunne f.eks. bruge det til at lave en slider hvor man skulle bedømme hvor tilfreds man er med et eller andet. I den ene ende kunne man skrive 0% tilfreds og i den anden 100% tilfreds og brugeren skulle så vælge hvor tilfredse de er ved at sætte slideren ca. der hvor de mener det passer.</li>
+                    </ul>
+                    <h3>Date and time data typer</h3>
+                    <ul>
+                        <li>Date: En dato uden nogen form for tidsangivelse.</li>
+                        <li>Datetime-local: Giver dato og tid, hvor klokkeslættet er det lokale tidspunkt for browseren.</li>
+                        <li>Time: Lokal tid.</li>
+                        <li>Month: Et enkelt specifikt år og måned.</li>
+                        <li>Week: En enkelt specifik uge, skrevet dom årstal og ugenummer (1-53).</li>
+                    </ul>
+                </section>
+
+                <section id="section10" class="kildesection">
+                    <hr>
+                    <h6>Kilder:</h6>
+                    <ul>
+                        <li><a href="https://fronter.com/eadania/links/files.phtml/1682136815$831952233$/Fag/1.+semester/Interaktionsudvikling/Dag+2+-+HTML/Intro+til+HTML.pdf">PDF udleveret af Niels Østergaard</a></li>
+                        <li><a href="http://chri9g09.web.eadania.dk/IntroTilHTML/index.html">Min intro-side til HTML</a></li>
+                        <li>Mark J. Collins: Pro HTML5 with CSS, JavaScript, and Multimedia – kapitel 1, side 5 + kapitel 5, side 81-101 + kapitel 6, side 103-113 + kapitel 7, side 115-130 + kapitel 8, side 131-159</li>
+                        <li><a href="../media/kap5.pdf">Fremlæggelse fra Thea Winther-Nielsen og Emilie Skov</a></li>
+                        <li><a href="http://niko5603.web.eadania.dk/html_embed/">Fremlæggelse fra Sara Middelhede og Nikolaj Istrup Andersen</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">developer.mozilla.org</a></li>
+                        <li><a href="https://www.w3schools.com/tags/tag_object.asp">www.w3schools.com</a></li>
+                        <li><a href="../media/kap8.pdf">Fremlæggelse fra Kevin Feliciano Nielsen og Joakim Bram Ziou</a></li>
+                    </ul>
+                </section>
+
+            </section>
+            <!-- TILBAGE TIL TOP KNAP -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p id="footertext">&copy; 2017 - <a href='mailto:chri9g09@student.eadania.dk'>Christina Kvistgaard Iversen</a></p>
+                <p id="smallfootertxt">Erhvervsakademi Dania Skive - MMD 1. semester</p>
+            </footer>
+        </div> <!-- Her slutter container -->
+        <!-- TILBAGE TIL TOP SCRIPT -->
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <!-- Link til jQuery bibliotek online (nødvendig til Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+>>>>>>> 97f2b903b15b64d1a95db235badc399c0c2e6049
+</html>
